@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.commons:commons-collections4:4.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.3/1c262f70f9b3c2351f1d13a9a9bd10d2ec7cfbc4/commons-collections4-4.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.3/bc1016cb58e55b6ea2e17fd54d3cd5657ef872bf/commons-collections4-4.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.3/39cad5b88a6f80ef9222a8054a3e5283efde3dde/commons-collections4-4.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

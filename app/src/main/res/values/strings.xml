@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">photo_wallpapers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_main_activity">WALLPAPER</string>
+    <string name="title_setting_activity">SETTING</string>
+    <string name="title_gallery_activity">GALLERY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="range">RANGE</string>
+    <string name="delay">SPEED</string>
+    <string name="scroll">Wallpaper scrolling</string>
+    <string name="power_save">Pause in battery saver mode</string>
+
+    <string name="toast_sensor_error">Sorry! This device does not support Rotation Vector Sensor.</string>
+    <string name="toast_invalid_pic_path">Invalid picture path!</string>
+    <string name="toast_failed_set_picture">Setting failed. Please retry!</string>
+    <string name="toast_failed_launch_wallpaper_chooser">Couldn\'t launch wallpaper chooser. You can still activate Beleco by choosing \"Live Wallpapers\" in your home screen wallpaper picker.</string>
+</resources>

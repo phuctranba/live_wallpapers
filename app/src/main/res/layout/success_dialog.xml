@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingHorizontal="@dimen/_20sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_20sdp"
+    android:background="@drawable/corner_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="@dimen/_140sdp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper has been set up successfully"
+            android:gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dialog_sucssec"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/btnOK"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_50sdp"
+        android:background="@drawable/corner_button_dialog_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</LinearLayout>

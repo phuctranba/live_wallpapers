@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewPicture"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="@dimen/_220sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/imagePicture"
+            android:layout_height="match_parent"
+            app:sriv_left_bottom_corner_radius="@dimen/_20sdp"
+            app:sriv_left_top_corner_radius="@dimen/_20sdp"
+            app:sriv_right_bottom_corner_radius="@dimen/_20sdp"
+            app:sriv_right_top_corner_radius="@dimen/_20sdp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picture"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewVideo"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="@dimen/_220sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/imageVideo"
+            android:layout_height="match_parent"
+            app:sriv_left_bottom_corner_radius="@dimen/_20sdp"
+            app:sriv_left_top_corner_radius="@dimen/_20sdp"
+            app:sriv_right_bottom_corner_radius="@dimen/_20sdp"
+            app:sriv_right_top_corner_radius="@dimen/_20sdp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

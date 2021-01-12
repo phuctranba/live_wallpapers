@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imageviewPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:id="@+id/imageLike"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/ic_live_true"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/_15sdp"
+            android:id="@+id/imageShare"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/ic_share"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:id="@+id/imageDownload"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/ic_download"/>
+
+        <ImageView
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:id="@+id/imageSetWallpaper"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/btn_save_as"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

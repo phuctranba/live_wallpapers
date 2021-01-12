@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/shadow"
+    android:layout_height="match_parent"
+    tools:context=".PreviewCustomPictureActivity.PreviewCustomPictureActivity">
+
+    <TableLayout
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/settings_item_height"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:text="@string/range"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:progressBackgroundTint="@color/white"
+                android:id="@+id/seekBarRange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:max="20"
+                android:maxHeight="@dimen/settings_item_height"
+                android:minHeight="@dimen/settings_item_height"
+                android:progress="10" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/settings_item_height"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:text="@string/delay"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:progressBackgroundTint="@color/white"
+                android:id="@+id/seekBarDelay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:max="20"
+                android:maxHeight="@dimen/settings_item_height"
+                android:minHeight="@dimen/settings_item_height"
+                android:progress="10" />
+        </TableRow>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:gravity="bottom"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/scroll"/>
+            <Switch
+                android:id="@+id/switchScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewSavePower"
+            android:visibility="gone"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:weightSum="10"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/power_save"/>
+            <Switch
+                android:id="@+id/switchSavePower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/btnApply"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_45sdp"
+                android:background="@drawable/corner_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="23sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ An application that can change and customize the wallpaper with pictures or vide
 * Android 4.1 +
 
 ## Development team
-* [Phuc Tran Ba](https://github.com/TranBaPhuc1999)
+* [Phuc Tran Ba](https://github.com/phuctranba)
 
 ## Development purpose
 Personal customers
